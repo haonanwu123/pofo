@@ -15,23 +15,23 @@ body{
 
 header#header{
     width: 100vw;
-    height: 125px;
+    height: 7.8125rem;
 }
 
 div#logo{
     float: left;
     position: relative;
-    top: 25px; left: 25px;
-    width: 75px;
-    height: 75px;
+    top: 1.5625rem; left: 1.5625rem;
+    width: 4.6875rem;
+    height: 4.6875rem;
     transform: rotate(45deg);
     background-color: rgba(0, 255, 255, 0.753);
 }
 
 p.logo{
     display: inline-flex;
-    margin-top: 18px;
-    margin-left: 26px;
+    margin-top: 1.125rem;
+    margin-left: 1.625rem;
     transform: rotate(-45deg);
     font-size: 2rem;
     font-family: 'Corinthia', sans-serif;
@@ -39,8 +39,8 @@ p.logo{
 
 table.header{
     float: left;
-    margin-left: 50px;
-    margin-top: 25px;
+    margin-left: 3.125rem;
+    margin-top: 1.5625rem;
 }
 
 td.header1{
@@ -52,30 +52,30 @@ td.header2{
 }
 
 div#grid{
-    max-width: 150px;
-    margin-top: 50px;
+    max-width: 9.375rem;
+    margin-top: 3.125rem;
     display: grid;
-    grid-template-columns:50px 50px 50px;
-    grid-template-rows: 50px;
+    grid-template-columns:3.125rem 3.125rem 3.125rem;
+    grid-template-rows: 3.125rem;
     float: right;
 }
 
 img#github{
     grid-template-columns: 1;
     grid-template-rows: 1;
-    max-width: 50px;
+    max-width: 3.125rem;
 }
 
 img#facebook{
     grid-template-columns: 2;
     grid-row: 1;
-    max-width: 50px;
+    max-width: 3.125rem;
 }
 
 img#ins{
     grid-template-columns: 3;
     grid-template-rows: 1;
-    max-width: 50px;
+    max-width: 3.125rem;
 }
 
 div.main{
@@ -86,7 +86,7 @@ div.main{
 div.menu{
     height:50vh;
     position:absolute;
-    width:150px;
+    width: 9.375rem;
     background:rgba(51,51,51,0.5);
     left:0;
     transition:0.5s linear;
@@ -101,14 +101,14 @@ input#switch{
 label.open{
     position:absolute;
     z-index:5;
-    width:20px;
-    height:20px;
+    width:1.25rem;
+    height:1.25rem;
     transition:0.3s ease-in-out;
-    margin:10px;
+    margin:0.625rem;
 }
 
 .main label.open:hover{ 
-    filter:drop-shadow(0 0 10px #1e90ff);
+    filter:drop-shadow(0 0 0.625rem #1e90ff);
 }
 
 label.open:hover::after,label.open:hover::before{
@@ -144,7 +144,7 @@ label.open::after{
 }
 
 #switch:checked ~ label.open{
-    transform:translateX(110px);
+    transform:translateX(6.875rem);
 }
 
 #switch:checked ~ .menu{
@@ -153,12 +153,12 @@ label.open::after{
 
 .menu ul{
     text-align:center;
-    padding-top:50px;
+    padding-top:3.125rem;
 }
 
 .menu ul li{
-    margin-top:15px;
-    font-size:16px;
+    margin-top:0.9375rem;
+    font-size:1rem;
     color:white;
     cursor: pointer;
     white-space: nowrap;
@@ -185,8 +185,8 @@ ul li:hover{
 }
 
 article.content{
-    max-width: 700px;
-    margin-left: 150px;
+    max-width: 43.75rem;
+    margin-left: 9.375rem;
     white-space: pre-line;
 }
 
@@ -204,8 +204,8 @@ article p.article{
 
 #img{
     position: relative;
-    width: 400px;
-    margin-right: 150px;
+    width: 25rem;
+    margin-right: 9.375rem;
     float: right;
 }
 
@@ -234,11 +234,11 @@ article p.article{
 }
 
 #img .description--blur{
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0.125rem);
 }
 
 #img #description > *{
-    transform: translateY(20px);
+    transform: translateY(1.25rem);
     transition: transform 0.25s;
 }
 
@@ -259,7 +259,7 @@ footer{
     width: 100vw;
     height: 10vh;
     position: relative;
-    top: 180px;
+    top: 11.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -269,7 +269,7 @@ footer #telefoonnummer{
     width: 33.3%;
     height: 100%;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 #telefoonnummer .telefoonnummer{
@@ -290,7 +290,7 @@ footer #wechat{
     width: 33.3%;
     height: 100%;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 #wechat .wechat{
