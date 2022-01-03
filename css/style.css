@@ -1,46 +1,52 @@
-body{
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+    border: 0;
+    word-break: break-all;
+    position: relative;
+    text-decoration: none;
 }
 
-#wapper{
+body,
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1rem=10px*/
+}
+
+body{
     background-image: url(https://github.com/haonanwu123/pofo/blob/main/img/background.jpg?raw=true);
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     color: whitesmoke;
-    margin: auto;
-    padding: 0;
+    font-size: 1.6rem;
 }
 
 header#header{
-    width: 100vw;
-    height: 7.8125rem;
+    width: 100%;
+    display: flex;
+    margin: 0 0 2rem 0;
+    justify-content: space-between;
 }
 
 div#logo{
-    float: left;
-    position: relative;
-    top: 1.5625rem; left: 1.5625rem;
-    width: 4.6875rem;
-    height: 4.6875rem;
-    transform: rotate(45deg);
-    background-color: rgba(0, 255, 255, 0.753);
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem 0 0 2rem;
 }
 
-p.logo{
-    display: inline-flex;
-    margin-top: 1.125rem;
-    margin-left: 1.625rem;
-    transform: rotate(-45deg);
-    font-size: 2rem;
-    font-family: 'Corinthia', sans-serif;
+.logo{
+    width: 100%;
 }
 
 table.header{
-    float: left;
-    margin-left: 3.125rem;
-    margin-top: 1.5625rem;
+    max-width: 20rem;
 }
 
 td.header1{
@@ -52,41 +58,51 @@ td.header2{
 }
 
 div#grid{
-    max-width: 9.375rem;
-    margin-top: 3.125rem;
+    max-width: 15rem;
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns:3.125rem 3.125rem 3.125rem;
-    grid-template-rows: 3.125rem;
-    float: right;
+    grid-template-columns:5rem 5rem 5rem;
+    grid-template-rows: 5rem;
 }
 
 img#github{
     grid-template-columns: 1;
     grid-template-rows: 1;
-    max-width: 3.125rem;
+    max-width: 5rem;
 }
 
 img#facebook{
     grid-template-columns: 2;
     grid-row: 1;
-    max-width: 3.125rem;
+    max-width: 5rem;
 }
 
 img#ins{
     grid-template-columns: 3;
     grid-template-rows: 1;
-    max-width: 3.125rem;
+    max-width: 5rem;
+}
+
+.wapper{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
 div.main{
+    width: 15rem;
+    height: 42.1rem;
     margin: 0;
     padding: 0;
 }
 
 div.menu{
-    height:50vh;
+    height:100%;
     position:absolute;
-    width: 9.375rem;
+    width: 100%;
     background:rgba(51,51,51,0.5);
     left:0;
     transition:0.5s linear;
@@ -100,11 +116,11 @@ input#switch{
 
 label.open{
     position:absolute;
-    z-index:5;
-    width:1.25rem;
-    height:1.25rem;
+    z-index:500;
+    width:2rem;
+    height:2rem;
     transition:0.3s ease-in-out;
-    margin:0.625rem;
+    margin:1rem;
 }
 
 .main label.open:hover{ 
@@ -144,7 +160,7 @@ label.open::after{
 }
 
 #switch:checked ~ label.open{
-    transform:translateX(6.875rem);
+    transform:translateX(11rem);
 }
 
 #switch:checked ~ .menu{
@@ -153,12 +169,12 @@ label.open::after{
 
 .menu ul{
     text-align:center;
-    padding-top:3.125rem;
+    padding-top:5rem;
 }
 
 .menu ul li{
-    margin-top:0.9375rem;
-    font-size:1rem;
+    margin-top:1.5rem;
+    font-size:1.6rem;
     color:white;
     cursor: pointer;
     white-space: nowrap;
@@ -172,12 +188,12 @@ ul li:hover{
 }
 
 #content{
-    width: 50vw;
-    height: 50vh;
+    display: flex;
+    width: 50%;
+    height: 75%;
     padding: 0;
     margin: 0;
     overflow: auto;
-    float: left;
 }
 
 ::-webkit-scrollbar{
@@ -185,9 +201,9 @@ ul li:hover{
 }
 
 article.content{
-    max-width: 43.75rem;
-    margin-left: 9.375rem;
-    white-space: pre-line;
+    max-width: 100%;
+    margin-left: 15rem;
+    white-space: pre-wrap;
 }
 
 article h2.title{
@@ -197,16 +213,24 @@ article h2.title{
 }
 
 article p.article{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-family: Fuzzy Bubbles, sans-serif;
+    margin: 0;
+}
+
+.img-wapper{
+    display:flex;
+    width: 30%;
+    height: 100%;
+    padding: 0;
     margin: 0;
 }
 
 #img{
     position: relative;
-    width: 25rem;
-    margin-right: 9.375rem;
-    float: right;
+    width: 30rem;
+    height: 40rem;
+    margin: 0;
 }
 
 #me{
@@ -234,11 +258,11 @@ article p.article{
 }
 
 #img .description--blur{
-    backdrop-filter: blur(0.125rem);
+    backdrop-filter: blur(2px);
 }
 
 #img #description > *{
-    transform: translateY(1.25rem);
+    transform: translateY(2rem);
     transition: transform 0.25s;
 }
 
@@ -256,24 +280,19 @@ article p.article{
 
 
 footer{
-    width: 100vw;
-    height: 10vh;
-    position: relative;
-    top: 11.25rem;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
+    font-weight: 500;
 }
 
 footer #telefoonnummer{
     width: 33.3%;
     height: 100%;
     text-align: left;
-    margin-left: 0.625rem;
+    margin-left: 1rem;
 }
 
 #telefoonnummer .telefoonnummer{
-    color: aqua;
+    color: rgb(255, 255, 255);
 }
 
 footer #email{
@@ -283,16 +302,22 @@ footer #email{
 }
 
 #email .email{
-    color: aqua;
+    color: rgba(255, 255, 255, 255);
 }
 
 footer #wechat{
     width: 33.3%;
     height: 100%;
     text-align: right;
-    margin-right: 0.625rem;
+    margin-right: 1rem;
 }
 
 #wechat .wechat{
-    color: aqua;
+    color: rgba(255, 255, 255, 255);
+}
+
+@media screen and (max-width:800px){
+    #header{
+       width: 80vh;
+    }
 }
