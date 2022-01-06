@@ -30,7 +30,6 @@ body{
 
 header#header{
     width: 100%;
-    height: 20%;
     display: flex;
     margin: 0 0 2rem 0;
     justify-content: space-between;
@@ -44,6 +43,108 @@ div#logo{
 
 .logo{
     width: 100%;
+}
+
+.header__nav {
+    margin-left: 6rem;
+    margin-right: auto;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+
+.nav__button {
+    height: 3rem;
+    width: 3rem;
+    z-index: 300;
+}
+
+
+.nav__background {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 200;
+    background-color: #100A5B;
+    opacity: 0;
+    transition: all .6s cubic-bezier(.83, 0, .17, 1);
+}
+
+
+
+.nav__icon,
+.nav__icon::before,
+.nav__icon::after {
+    width: 3rem;
+    height: 3px;
+    background-color: #fff;
+    display: inline-block;
+
+}
+
+.nav__icon::before,
+.nav__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+    transform-origin: center;
+}
+
+.nav__icon::before {
+    top: -.8rem;
+}
+
+.nav__icon::after {
+    top: .8rem;
+}
+
+.nav__icon {
+    display: none;
+    z-index: 400;
+    left: 0;
+}
+
+.nav__button:hover .nav__icon::before {
+    transform: translateY(-2px);
+}
+
+.nav__button:hover .nav__icon::after {
+    transform: translateY(2px);
+}
+
+
+
+.nav__menu {
+    display: flex;
+    z-index: 201;
+}
+
+.menu-item {
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item__text {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+    transition: transform .1s ease-in;
+}
+
+.menu-item:hover .menu-item__text {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
 }
 
 div#grid{
@@ -73,102 +174,6 @@ img#ins{
     max-width: 5rem;
 }
 
-div.main{
-    order: -100;
-    width: 15rem;
-    height: 42.1rem;
-    margin: 0;
-    padding: 0;
-}
-
-div.menu{
-    height:100%;
-    position:absolute;
-    width: 100%;
-    background:rgba(51,51,51,0.5);
-    left:0;
-    transition:0.5s linear;
-    overflow: hidden;
-    transform:translateX(-100%);
-}
-
-input#switch{
-    display:none;
-}
-
-label.open{
-    position:absolute;
-    z-index:500;
-    width:2rem;
-    height:2rem;
-    transition:0.3s ease-in-out;
-    margin:1rem;
-}
-
-.main label.open:hover{ 
-    filter:drop-shadow(0 0 0.625rem #1e90ff);
-}
-
-label.open:hover::after,label.open:hover::before{
-    background:white;
-}
-
-label.open::before,label.open::after{
-    content:"";
-    width:100%;
-    height:20%;
-    position:absolute;
-    left:0;
-    background:#1e90ff;
-    transition:0.5s ease-in-out;
-}
-
-label.open::before{
-    top:20%;
-}
-
-label.open::after{
-    top:60%;
-}
-
-#switch:checked ~ label.open::before{
-    top:50%;
-    transform:translateY(-50%) rotate(45deg);
-}
-
-#switch:checked ~ label.open::after{
-    top:50%;
-    transform:translateY(-50%) rotate(-45deg);
-}
-
-#switch:checked ~ label.open{
-    transform:translateX(11rem);
-}
-
-#switch:checked ~ .menu{
-    transform:translateX(0);
-}
-
-.menu ul{
-    text-align:center;
-    padding-top:5rem;
-}
-
-.menu ul li{
-    margin-top:1.5rem;
-    font-size:1.6rem;
-    color:white;
-    cursor: pointer;
-    white-space: nowrap;
-    font-weight: bold;
-    transition:0.2s linear;
-}
-
-ul li:hover{
-    text-shadow:1px 1px 1px black,0 0 10px white,0 0 20px white;
-    color:#1e90ff;
-}
-
 .wapper{
     width: 100%;
     display: flex;
@@ -181,7 +186,6 @@ ul li:hover{
 #content{
     display: flex;
     width: 50%;
-    height: 75%;
     padding: 0;
     margin: 0;
     overflow: auto;
@@ -193,7 +197,7 @@ ul li:hover{
 
 article.content{
     max-width: 100%;
-    margin-left: 15rem;
+    height: 100%;
     white-space: pre-wrap;
 }
 
@@ -211,7 +215,7 @@ article p.article{
 
 .img-wapper{
     display:flex;
-    width: 30%;
+    width: 50%;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -274,11 +278,13 @@ footer{
     width: 100;
     justify-content: space-between;
     font-weight: 500;
+    display: flex;
 }
 
 footer #telefoonnummer{
     text-align: left;
     margin-left: 1rem;
+    display: inline-flex;
 }
 
 #telefoonnummer .telefoonnummer{
@@ -287,6 +293,7 @@ footer #telefoonnummer{
 
 footer #email{
     text-align: center;
+    display: inline-flex;
 }
 
 #email .email{
@@ -296,6 +303,7 @@ footer #email{
 footer #wechat{
     text-align: right;
     margin-right: 1rem;
+    display: inline-flex;
 }
 
 #wechat .wechat{

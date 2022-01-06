@@ -16,19 +16,19 @@
             <div id="logo">
                 <img class="logo" src="/img/logo.svg" alt="logo">
             </div>
-            <div class="main">
-                <input type="checkbox" id="switch"> 
-                <label for="switch" class="open"></label>
-                <div class="menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Projecten</li>
-                        <li>Diploma</li>
-                        <li>Myzelf</li>
-                        <li>Contact</li>
-                    </ul>
-                </div><!--menu voor de ul-->
-            </div><!--body voor de sidebar menu-->
+            <nav class="header__nav">
+                <input type="checkbox" class="nav__checkbox" id="nav__toggle">
+                <label for="nav__toggle" class="nav__button">
+                    <span class="nav__icon"></span>
+                </label>
+                <div class="nav__background"></div>
+                <ul class="nav__menu">
+                    <li class="menu-item"><a class="menu-item__text" href="/">home</a></li>
+                    <li class="menu-item"><a class="menu-item__text" href="/">tutoriails</a></li>
+                    <li class="menu-item"><a class="menu-item__text" href="/">blogs</a></li>
+                    <li class="menu-item"><a class="menu-item__text" href="/">contact</a></li>
+                </ul>
+            </nav>
             <div id="grid">
                 <div>
                     <a  href="https://github.com/haonanwu123/haonanwu.git" target="_blank">
