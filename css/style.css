@@ -31,18 +31,19 @@ body{
 header#header{
     width: 100%;
     display: flex;
-    margin: 0 0 2rem 0;
+    margin-bottom: 5rem;
+    padding: 3rem 2rem 0 2rem;
     justify-content: space-between;
 }
 
 div#logo{
-    width: 10rem;
-    height: 10rem;
-    margin: 1rem 0 0 2rem;
+    width: 4.4rem;
+    height: 4.4rem;
 }
 
 .logo{
-    width: 100%;
+    width: 4.4rem;
+    height: 4.4rem;
 }
 
 .header__nav {
@@ -124,7 +125,6 @@ div#logo{
 }
 
 .menu-item {
-
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -150,7 +150,6 @@ div#logo{
 div#grid{
     display: flex;
     max-width: 15rem;
-    margin-top: 5rem;
     display: grid;
     grid-template-columns:5rem 5rem 5rem;
     grid-template-rows: 5rem;
@@ -178,14 +177,17 @@ img#ins{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     border: 0;
-    margin: 0;
+    margin-bottom: 5rem;
+    padding: 0 6.5rem 0 6.5rem;
+    justify-content: center;
+    text-align: center;
 }
 
 #content{
     display: flex;
-    width: 50%;
+    max-width: 150rem;
+    max-height: 30rem;
     padding: 0;
     margin: 0;
     overflow: auto;
@@ -196,8 +198,7 @@ img#ins{
 }
 
 article.content{
-    max-width: 100%;
-    height: 100%;
+    max-width: 150rem;
     white-space: pre-wrap;
 }
 
@@ -215,16 +216,16 @@ article p.article{
 
 .img-wapper{
     display:flex;
-    width: 50%;
-    height: 100%;
+    width: 30rem;
+    height: 40rem;
     padding: 0;
     margin: 0;
 }
 
 #img{
     position: relative;
-    width: 30rem;
-    height: 40rem;
+    width: 100%;
+    height: 100%;
     margin: 0;
 }
 
@@ -275,7 +276,7 @@ article p.article{
 
 
 footer{
-    width: 100;
+    width: 100%;
     justify-content: space-between;
     font-weight: 500;
     display: flex;
@@ -308,4 +309,76 @@ footer #wechat{
 
 #wechat .wechat{
     color: rgba(255, 255, 255, 255);
+}
+
+@media screen and (max-width: 832px){
+    .header__nav {
+        order: -1;
+        margin: 0;
+    }
+
+    .nav__icon {
+        display: inline-block;
+        transition: all .2s;
+    }
+
+    .nav__menu {
+        flex-direction: column;
+        justify-content: center;
+        transition: all .6s ease-in-out;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .menu-item {
+        margin-bottom: 1rem;
+    }
+
+    .menu-item__text {
+        font-size: 2.5rem;
+    }
+
+    .nav__checkbox:checked~.nav__button .nav__icon::before {
+        transform: translateY(8px)rotate(45deg);
+    }
+
+    .nav__checkbox:checked~.nav__button .nav__icon {
+        background-color: transparent;
+    }
+
+    .nav__checkbox:checked~.nav__button .nav__icon::after {
+        transform: translateY(-8px)rotate(-45deg);
+    }
+
+    .nav__checkbox:checked~.nav__menu {
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .nav__checkbox:checked~.nav__background {
+        display: inline-block;
+        transform: scale(80);
+        opacity: 1;
+
+    }
+}
+
+@media screen and (max-width: 472px) {
+    .wapper{
+        padding: 0 1rem 0 1rem;
+    }
+
+    #content .title{
+        position: relative;
+        left: -4rem;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
 }
