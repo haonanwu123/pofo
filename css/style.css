@@ -44,6 +44,7 @@ div#logo{
 .logo{
     width: 4.4rem;
     height: 4.4rem;
+    display: inline-block;
 }
 
 .header__nav {
@@ -227,6 +228,7 @@ article p.article{
     width: 100%;
     height: 100%;
     margin: 0;
+    display: inline-block;
 }
 
 #me{
