@@ -206,22 +206,25 @@ img#ins{
 
 article.content{
     max-width: 150rem;
-    white-space: pre-wrap;
 }
 
 article h2.title{
     margin: 0;
     display: inline-flex;
+    text-align: center;
     font-family: Hind Siliguri, sans-serif;
 }
 
 article p.article{
     font-size: 1.2em;
+    word-break: normal;
+    white-space: pre-line;
     font-family: Fuzzy Bubbles, sans-serif;
     margin: 0;
+    text-align: left;
 }
 
-.img-wapper{
+.img-wrapper{
     display:flex;
     width: 30rem;
     height: 40rem;
@@ -282,6 +285,50 @@ article p.article{
     font-family: Hind Siliguri, sans-serif;
 }
 
+.aboutme-wrapper{
+    max-width: 100%;
+    background-image: url(/img/aboutme-backgroud.jpeg);
+    background-size: cover;
+    margin: 13rem 15rem 5rem 15rem;
+    border: 0.1rem solid whitesmoke;
+    display: flex;
+}
+
+.aboutme-wrapper .aboutme-img-wrapper{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-img-wrapper .aboutme-img{
+    max-width: 54rem;
+    height: 42.65rem;
+    opacity: 0.85;
+}
+
+.aboutme-wrapper .aboutme-article-wrapper{
+    width: 50%;
+    height: 100%;
+    border: 0.1rem dashed whitesmoke;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    max-height: 100%;
+    display: flex;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    overflow: auto;
+}
+
+.aboutme-article-wrapper .aboutme-article{
+    max-width: 100%;
+    max-height: 100%;
+    word-break: normal;
+    text-align: left;
+    font-family: Hind Siliguri, sans-serif;
+    display: inline-flex;
+}
 
 footer{
     width: 100%;
@@ -373,6 +420,11 @@ footer #wechat{
         transform: scale(80);
         opacity: 1;
 
+    }
+
+    .aboutme-wrapper{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
