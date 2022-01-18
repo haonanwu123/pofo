@@ -286,30 +286,30 @@ article p.article{
 }
 
 .aboutme-wrapper{
-    max-width: 100%;
     background-image: url(https://github.com/haonanwu123/pofo/blob/main/img/aboutme-backgroud.jpeg?raw=true);
     background-size: cover;
-    margin: 13rem 15rem 5rem 15rem;
+    margin: 13rem 25rem 5rem 25rem;
     border: 0.1rem solid whitesmoke;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .aboutme-wrapper .aboutme-img-wrapper{
-    width: 50%;
-    height: 100%;
+    width: 54rem;
     display: flex;
     justify-content: center;
 }
 
 .aboutme-img-wrapper .aboutme-img{
     max-width: 54rem;
-    height: 42.65rem;
-    opacity: 0.85;
+    max-height: 42.65rem;
+    opacity: 0.8;
 }
 
 .aboutme-wrapper .aboutme-article-wrapper{
-    width: 50%;
-    height: 100%;
+    width: 54rem;
+    max-height: 100%;
     border: 0.1rem dashed whitesmoke;
     border-bottom: none;
     border-top: none;
@@ -318,7 +318,6 @@ article p.article{
     display: flex;
     display: -webkit-box;
     -webkit-box-align: center;
-    overflow: auto;
 }
 
 .aboutme-article-wrapper .aboutme-article{
@@ -327,7 +326,6 @@ article p.article{
     word-break: normal;
     text-align: left;
     font-family: Hind Siliguri, sans-serif;
-    display: inline-flex;
 }
 
 footer{
