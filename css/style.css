@@ -287,7 +287,7 @@ article p.article{
 
 .aboutme-wrapper{
     max-width: 100%;
-    background-image: url(/img/aboutme-backgroud.jpeg);
+    background-image: url(https://github.com/haonanwu123/pofo/blob/main/img/aboutme-backgroud.jpeg?raw=true);
     background-size: cover;
     margin: 13rem 15rem 5rem 15rem;
     border: 0.1rem solid whitesmoke;
