@@ -313,14 +313,72 @@ article p.article{
     display: -webkit-flex;
     -webkit-box-align: center;
     overflow: auto;
+    min-width: 30rem;
 }
 
 .aboutme-article{
-    min-width: 30rem;
     word-break: normal;
     text-align: left;
     font-family: Hind Siliguri, sans-serif;
     font-weight: 500;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-js{
+    width: 30rem;
+    border-radius: 1rem;
+    transform: scale();
+}
+
+.project-fate{
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.project-oudepofo{
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.card__subtitle {
+    font-size: 2rem;
+    word-break: normal;
+    white-space: pre-wrap;
+    font-weight: 500;
+    font-family: Fuzzy Bubbles ,sans-serif;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.card__btn {
+    display: inline-block;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    transform: translateX(-10px);
+    transition: all .1s ease-in;
+}
+
+.card__btn a {
+    font-size: 2rem;
+    font-family: Hind Siliguri, sans-serif;
+    color: #3BFFF2;
+    text-decoration: none;
+    padding: .8rem 1rem;
+}
+
+.card__btn:hover {
+    transform: translateX(0);
+}
+
+.card__btn:hover a {
+    background: linear-gradient(95.83deg, rgba(255, 255, 255, 0.3) -2.4%, rgba(255, 255, 255, 0) 103.86%);
+    border-radius: 5px;
 }
 
 footer{
@@ -433,5 +491,23 @@ footer #wechat{
 
     footer{
         font-size: 1rem;
+    }
+
+    .aboutme-wrapper{
+        margin-left: 6rem;
+    }
+
+    .project-wrapper{
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .aboutme-wrapper{
+        margin-left: 3rem;
+    }
+
+    .project-wrapper{
+        margin-left: 3rem;
     }
 }
