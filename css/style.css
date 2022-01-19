@@ -84,7 +84,6 @@ div#logo{
     height: 3px;
     background-color: #fff;
     display: inline-block;
-
 }
 
 .nav__icon::before,
@@ -469,7 +468,7 @@ footer #wechat{
     .nav__checkbox:checked~.nav__background {
         display: inline-block;
         transform: scale(80);
-        opacity: 1;
+        opacity: 0.5;
 
     }
 
