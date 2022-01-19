@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    background-size: 100vw 100vh;
+}
+#container{
+        display: grid;
+        grid-template-columns:20vw 20vw 10vw 10vw 20vw 20vw;
+        grid-template-rows:10vh 40vh 40vh 10vh ;
+        color: whitesmoke;
+}
+.link{
+    color: whitesmoke;
+}
+
+#home{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#skills{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#projecten{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#diploma{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#contact{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    grid-column-start: 6 ;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#mijzelf{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.hoi{
+    color: aquamarine;
+    font-size: 200%;
+}
+
+.tekstvoormijzelf{
+    width: 442.5px;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    line-height: 1.5em;
+    word-spacing: 2px;
+}
+
+#fotovoormijzelf{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+.fotovoormijzelf{
+    max-width: 442.5px;
+    max-height: 315.59px;
+}
+
+#hobby{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.tekstvoorhobby{
+    line-height: 1.5em;
+    word-spacing: 2px;
+}
+
+#fotovoorhobby{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+.fotovoorhobby{
+    width: 420px;
+   height: 236.6px;
+}
+   
+button{
+background-color: black;  
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 16px;
+  cursor: grab; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#facebook{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.facebook{
+    width: 78.89px; height: 78.89px;
+}
+
+#instagram{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.instagram{
+    width: 78.89px; height: 78.89px;
+}
+
+#whatsapp{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.whatsapp{
+    width: 78.89px; height: 78.89px;
+}
+
+#emial{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.email{
+    color: whitesmoke;
+    transform: scale(0.9) translateY(30px);
+    display: inline-block;
+}
+
+#telefoonnummer{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.telefoonnummer{
+    color: whitesmoke;
+    transform: scale(0.9) translateY(30px);
+    display: inline-block;
+}

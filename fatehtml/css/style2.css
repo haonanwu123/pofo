@@ -1,0 +1,29 @@
+.a{width:100%;overflow:hidden}
+.left{width:49%;border-right:1px solid rgb(89, 0, 255)}
+.right{width:50%}
+.left{
+    float:none; display: inline-block;
+}
+.right{
+    float: none;display: inline-block;
+}
+*{box-sizing:border-box; padding:0; margin:0;}
+
+table, th, td {
+    border:1px solid black;
+  }
+
+.masters{
+    text-align: left;
+    margin-left: 200px;
+    color: red;
+}
+
+.servants{
+    text-align: right;
+    margin-right: 200px;
+    color: blue;
+}
+.fate{
+    text-align: center;
+}
