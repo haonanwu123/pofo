@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="/javascript/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corinthia">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Smooch">
@@ -72,24 +71,26 @@
             </div>
         </div>
         <div class="project-wrapper">
+            <div id="modal">
+                <div id="modalw" class="modal">
+                    <img id="beImg" />
+                </div>
+            </div>
             <div class="card" id="project">
-                <img id="project-js" class="pic" src="https://github.com/haonanwu123/pofo/blob/main/img/js.png?raw=true" alt="js">
+                <img id="project-js" class="thum-img" src="https://github.com/haonanwu123/pofo/blob/main/img/js.png?raw=true" alt="js" />
                 <div class="card__subtitle">Dit is mijn Javascript project, ik heb het functies in deze pagina gemaakt.</div>
                 <button class="card__btn"><a href="https://github.com/haonanwu123/js/blob/main/javascrpit/main.js" target="_blank">meer kijken &#8250;</a></button>
             </div>
             <div class="card">
-                <img id="project-fate" class="pic" src="https://github.com/haonanwu123/pofo/blob/main/img/fate.png?raw=true" alt="fate">
+                <img id="project-fate" class="thum-img" onclick="showBeImg(this)" src="https://github.com/haonanwu123/pofo/blob/main/img/fate.png?raw=true" alt="fate" />
                 <div class="card__subtitle">Dit is mijn eerst html en css project , het introduceert een anime 《fate》. </div>
                 <button class="card__btn"><a href="https://github.com/haonanwu123/fate" target="_blank">meer kijken &#8250;</a></button>
             </div>
             <div class="card">
-                <img id="project-oudepofo" class="pic" src="https://github.com/haonanwu123/pofo/blob/main/img/oudepofo.png?raw=true" alt="oudepofo">
+                <img id="project-oudepofo" class="thum-img" onclick="showBeImg(this)" src="https://github.com/haonanwu123/pofo/blob/main/img/oudepofo.png?raw=true" alt="oudepofo" />
                 <div class="card__subtitle">Dit is mijn eerst portofolio pagina, het werd gemaakt met grid.</div>
                 <button class="card__btn"><a href="https://github.com/haonanwu123/oude-pofo" target="_blank">meer kijken &#8250;</a></button>
             </div>
-            <div id="outerdiv"></div>
-            <div id="innerdiv"></div>
-            <img id="bigimg" src="" />
         </div>
         <footer id="footer">
             <div id="telefoonnummer">
