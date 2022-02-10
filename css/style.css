@@ -328,20 +328,39 @@ article p.article{
     justify-content: center;
 }
 
-.project-js{
+#project-js{
     width: 30rem;
     border-radius: 1rem;
     transform: scale();
 }
 
-.project-fate{
+#project-fate{
     width: 30rem;
     border-radius: 1rem;
 }
 
-.project-oudepofo{
+#project-oudepofo{
     width: 30rem;
     border-radius: 1rem;
+}
+
+#outerdiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.7);
+    z-index: 20000;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#innerdiv{
+    position: absolute;
+}
+
+#bigimg{
+    border: 5px solid #fff;
 }
 
 .card__subtitle {
