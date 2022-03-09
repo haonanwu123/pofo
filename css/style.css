@@ -416,6 +416,11 @@ footer #wechat{
 }
 
 @media screen and (max-width: 832px){
+    .nav__button{
+        position: fixed;
+        margin-top: 15px;
+    }
+
     .header__nav {
         order: -1;
         margin: 0;
